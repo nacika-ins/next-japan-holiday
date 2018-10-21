@@ -1,6 +1,6 @@
 [package]
 name = "next-japan-holiday"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["nacika <nacika.inscatolare@gmail.com>"]
 
 [dependencies]
