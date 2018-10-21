@@ -37,7 +37,7 @@ pub fn get_next_holiday() -> Result<JapanHoliday, String> {
             match date {
                 Ok(date) => {
                     let duration = date.signed_duration_since(local_time);
-                    Some(JapanHoliday { date: date.format("%Y年%m月%d日").to_string(), name: name.to_string(), diff: duration.num_days() + 1  })
+                    Some(JapanHoliday { date: date.format("%Y年%m月%d日").to_string(), name: name.to_string().replace('"', ""), diff: duration.num_days() + 1  })
                 }
                 _ => None
             }
