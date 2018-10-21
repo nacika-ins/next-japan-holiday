@@ -1,0 +1,9 @@
+[package]
+name = "next-japan-holiday"
+version = "0.1.0"
+authors = ["nacika <nacika.inscatolare@gmail.com>"]
+
+[dependencies]
+chrono = "0.4.6"
+reqwest = "*"
+serde_json = "*"
